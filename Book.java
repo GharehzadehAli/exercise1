@@ -7,4 +7,7 @@ public class Book extends Notes{
         this.Wtiter=wtiter;
     }
 
+    public String getWtiter() {
+        return Wtiter;
+    }
 }
