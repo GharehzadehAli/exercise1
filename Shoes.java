@@ -1,25 +1,22 @@
 package com.company;
 
-public abstract class Shoes {
+public abstract class Shoes extends Product {
     private String brand;
-    private String model;
-    private double price;
 
-    Shoes(String brand, String model, double price) {
-        this.brand = brand;
-        this.model = model;
-        this.price = price;
+
+    Shoes(int id, String name, double price) {
+        super(id,name,price);
     }
 
     public String getBrand() {
         return brand;
     }
 
-    public String getModel() {
-        return model;
+
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public double getPrice() {
-        return price;
-    }
+
 }

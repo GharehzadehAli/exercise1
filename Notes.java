@@ -1,18 +1,11 @@
 package com.company;
 
-public abstract class Notes {
-    private String name;
-    private double price;
-    Notes (String name,double price){
-        this.name=name;
-        this.price=price;
+public abstract class Notes extends Product {
+
+
+    Notes(int id, String name, double price) {
+        super(id, name, price);
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public double getPrice() {
-        return price;
-    }
 }

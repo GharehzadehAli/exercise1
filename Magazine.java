@@ -1,13 +1,21 @@
 package com.company;
 
 public class Magazine extends Notes {
-    private String providor;
-    Magazine(String name,double price,String providor){
-        super(name,price);
-        this.providor=providor;
+    private String provider;
+    Magazine(int id,String type,double price){
+        super(id,type,price);
+
     }
 
-    public String getProvidor() {
-        return providor;
+    public void setProvidor(String providor) {
+
+    }
+
+    public String getProvider() {
+        return provider;
+    }
+    @Override
+    public void display() {
+        System.out.println(getId()+". "+ getType()+"\t"+ getProvider()+"\t$"+getPrice());
     }
 }

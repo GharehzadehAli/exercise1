@@ -1,7 +1,12 @@
 package com.company;
 
 public class Sneakers extends Shoes {
-    Sneakers(String brand, String model, double price){
-        super(brand,model,price);
+    Sneakers(int id, String name, double price){
+        super(id,name,price);
+    }
+
+    @Override
+    public void display() {
+        System.out.println(getId()+". "+ getType()+"\t"+getBrand()+"\t$"+getPrice());
     }
 }

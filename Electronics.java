@@ -1,19 +1,18 @@
 package com.company;
 
-public abstract class Electronics {
-    private double price;
-    private String name;
+public abstract class Electronics extends Product {
 
-    Electronics(String name, double price) {
-        this.name = name;
-        this.price = price;
+    private String brand;
+
+    Electronics(int id, String name, double price) {
+        super(id, name, price);
     }
 
-    public String getName() {
-        return name;
+    public String getBrand() {
+        return brand;
     }
 
-    public double getPrice() {
-        return price;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }
