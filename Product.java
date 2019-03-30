@@ -9,6 +9,11 @@ public abstract class Product {
         this.type = type;
         this.price = price;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getType() {
         return type;
     }

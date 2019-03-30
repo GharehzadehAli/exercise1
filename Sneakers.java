@@ -1,8 +1,8 @@
 package com.company;
 
 public class Sneakers extends Shoes {
-    Sneakers(int id, String name, double price){
-        super(id,name,price);
+    Sneakers(int id, String type, double price){
+        super(id,type,price);
     }
 
     @Override

@@ -3,8 +3,8 @@ package com.company;
 public abstract class Notes extends Product {
 
 
-    Notes(int id, String name, double price) {
-        super(id, name, price);
+    Notes(int id, String type, double price) {
+        super(id, type, price);
     }
 
 
